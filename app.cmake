@@ -1,4 +1,4 @@
-message(STATUS "Loading tests-tlib module...")
+message(STATUS "Loading tests-tlib app...")
 
 if (NOT CONFIGURED_ONCE)
 	set(APP_TESTS_TLIB_SOURCE_DIR ${APP_TESTS_TLIB_DIR}/src)

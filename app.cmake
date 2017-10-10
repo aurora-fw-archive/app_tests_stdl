@@ -14,14 +14,14 @@
 # ensure the GNU General Public License version 3 requirements will be
 # met: https://www.gnu.org/licenses/gpl-3.0.html.
 
-message(STATUS "Loading tests-tlib app...")
+message(STATUS "Loading tests-stdl app...")
 
 if (NOT CONFIGURED_ONCE)
-	set(AURORAFW_APP_TESTS_TLIB_SOURCE_DIR ${AURORAFW_APP_TESTS_TLIB_DIR}/src)
+	set(AURORAFW_APP_TESTS_STDL_SOURCE_DIR ${AURORAFW_APP_TESTS_STDL_DIR}/src)
 endif()
 
-add_executable(aurorafw_app_tests_string ${AURORAFW_APP_TESTS_TLIB_SOURCE_DIR}/main.cpp)
+add_executable(aurorafw_app_tests_string ${AURORAFW_APP_TESTS_STDL_SOURCE_DIR}/main.cpp)
 
-target_link_libraries(aurorafw_app_tests_string aurorafw-core aurorafw-tlib aurorafw-cli)
+target_link_libraries(aurorafw_app_tests_string aurorafw-core aurorafw-stdl aurorafw-cli)
 
 set_target_properties(aurorafw_app_tests_string PROPERTIES OUTPUT_NAME aurorafw_app_tests_string.out)

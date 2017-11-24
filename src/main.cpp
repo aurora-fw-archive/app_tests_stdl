@@ -17,7 +17,6 @@
 ****************************************************************************/
 
 #include <AuroraFW/Aurora.h>
-#include <iostream>
 
 using namespace AuroraFW;
 

@@ -22,6 +22,6 @@ endif()
 
 add_executable(aurorafw_app_tests_string ${AURORAFW_APP_TESTS_STDL_SOURCE_DIR}/main.cpp)
 
-target_link_libraries(aurorafw_app_tests_string aurorafw-core aurorafw-corelib aurorafw-stdl aurorafw-cli)
+target_link_libraries(aurorafw_app_tests_string aurorafw-core aurorafw-cli)
 
 set_target_properties(aurorafw_app_tests_string PROPERTIES OUTPUT_NAME aurorafw_app_tests_string.out)

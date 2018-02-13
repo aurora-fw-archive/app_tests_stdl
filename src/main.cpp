@@ -155,7 +155,7 @@ afwslot slot_MyApp_on_open()
 	AuroraFW::DebugManager::Log("done.");
 }
 
-afwint_t main(afwint_t argc, afwchar_t * argv[])
+int main(int argc, char * argv[])
 {
 	MyApp = new Application(slot_MyApp_on_open, argc, argv);
 	delete MyApp;
